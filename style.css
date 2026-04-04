@@ -38,6 +38,9 @@
 /* Site max width */
 --site-max-width: 1300px;
 }
+section {
+  scroll-margin-top: 80px;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -55,6 +58,7 @@ button{
 .image-width{
   width: 100%;
 } 
+
 .section-content{
   margin: 0 auto;
   padding: 0 20px;
@@ -88,9 +92,20 @@ header .navbar{
   justify-content: space-between;
 }
 .navbar .nav-logo .logo-text{
+  display: flex;
+  align-items: center;   
+  gap: 8px; 
   color: var(--white-color);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
+}
+.navbar .nav-logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.navbar .nav-logo span {
+  letter-spacing: 1px;
 }
 .navbar .nav-menu{
   display: flex;
@@ -248,7 +263,7 @@ object-fit: contain;
   font-size: var(--font-size-m);
 }
 .testimonials-section{
-  padding: 5px 0 100px;
+  padding: 50px 0;
   background: var(--light-pink-color);
 }
 .testimonials-section .slider-wrapper{
@@ -306,6 +321,7 @@ object-fit: contain;
   overflow: hidden;
   border-radius: var(--border-radius-s);
   width: calc(100% / 3 - 32px);
+  margin: 20px 0;
 }
 .gallery-section .gallery-item .gallery-image{
   width: 100%;
@@ -421,6 +437,10 @@ object-fit: contain;
   .menu-section .menu-list .menu-item{
     width: calc(100% / 3  - 60px);
   }
+  .gallery-section .gallery-list .gallery-item{
+    margin: 20px 0;
+ 
+  }
 
 }
 @media screen and (max-width:900px){
@@ -519,7 +539,7 @@ object-fit: contain;
 
   .gallery-section .gallery-list .gallery-item{
     width: calc(100% / 2 - 30px);
-
+    margin: 10px 0;
   }
   .contact-section .section-content {
     align-items: center;
@@ -533,6 +553,7 @@ object-fit: contain;
   }
   .menu-section .menu-list .menu-item,   .gallery-section .gallery-list .gallery-item{
     width: 100%;
+    margin: 10px 0;
   }
   .testimonials-section .slider-wrapper{
     margin: 0 0 30px;
