@@ -10,11 +10,11 @@
 :root{
 /* Colors */
   --white-color: #fff;
-  --dark-color: #252525;
-  --primary-color: #3b141c;
-  --secondary-color: #f3961c;
-  --light-pink-color: #faf4f5;
-  --medium-gray-color: #ccc;
+  --dark-color: #202020;
+  --primary-color: #04132e;
+  --secondary-color: #f59a12;
+  --light-pink-color: #dee5f5;
+  --medium-gray-color: #cccccc;
 
 /* Font size */
 --font-size-s: 0.9rem;
