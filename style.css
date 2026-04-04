@@ -548,6 +548,9 @@ object-fit: contain;
 
 }
 @media screen and (max-width:640px){
+  .hero-section .hero-image-wrapper{
+    margin: 20px;
+  }
   .menu-section .menu-list{
     gap: 60px;
   }
